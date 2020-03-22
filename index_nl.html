@@ -85,7 +85,7 @@
               </p>
             </main>
             <footer class="mt-4">
-              <p class="text-secondary">#wijhelpenmee #wijhebbennodig #maskermatch</p>
+              <p class="text-secondary">#wijhelpenmee #wijhebbennodig #ElkeLeerlingOnline</p>
 
               <p class="text-center">
                 <a class="mt-1 btn btn-primary btn-lg d-block d-md-inline-block" href="#donate">
@@ -120,19 +120,25 @@
       <div class="row align-items-center justify-content-between">
         <div class="col-md-6 col-lg-5">
           <figure class="mb-0">
-            <img src="./assets/img/kleding_v3.png" class="img-fluid my-auto" width="740" height="753" />
           </figure>
         </div>
         <div class="col-md-6">
-          <h2 class="h1">Beschermmateriaal doneren</h2>
-          <h3 class="h5 text-dark">Heb je jouw stapel mondmaskers afgewerkt?</h3>
+          <h2 class="h1">Laptops gevraagd</h2>
+          <h3 class="h5 text-dark">Kan je laptops beschikbaar stellen?</h3>
           <p class="text-dark">
-            Was je handen zo vaak mogelijk. Stop de mondmaskers in een afsluitbare zak (bv. diepvrieszakjes). Je redt er letterlijk
-            mensenlevens mee.
+            Hieronder vind je een overzicht van de scholen en organisaties die op zoek zijn naar toestellen om beschikbaar te stellen aan leerlingen.
           <p>
-          <p class="text-dark">
-            Klik op de knop hieronder om het formulier in te vullen. Dan komen onze koeriers ze bij jou ophalen.
-          </p>
+
+          <div id="hr">
+            <script id="hr-template" type="text/x-handlebars-template">
+              {{#ifCond cells.Titel '!==' "Titel"}}
+              <h3 class="h5 text-dark mt-5">{{cells.Titel}}</h3>
+                <p class="text-dark"><i>{{cells.Datum}}</i>
+                {{cells.Omschrijving}}</p>
+                <a class="mt-3 btn btn-primary btn-lg" href="mailto:{{cells.Email}}" target="_blank" rel="noopener nofollow">Contacteer</a>
+              {{/ifCond}}
+            </script>
+          </div>
 
           <h3 class="h5 text-dark mt-5">Ook je gekochte mondmaskers kun je meegeven.</h3>
           <p class="text-dark">
@@ -155,25 +161,32 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-6">
-          <h2 class="h1">Beschermmateriaal vragen</h2>
-          <h3 class="h5 text-dark mt-5">Je bent geen zorgverlener?</h3>
-          <p>
-            Onze oproep gaat in eerste instantie uit naar zorgverleners. Ben je geen zorgverlener, dan kom je hiervoor spijtig genoeg niet in aanmerking.
-          </p>
+          <h2 class="h1">Laptops Vragen</h2>
 
-          <h3 class="h5 text-dark">Je bent een zorgverlener?</h3>
+          <h3 class="h5 text-dark">Ben je een school die op zoek is naar laptops voor haar leerlingen?</h3>
           <p>
-            Je bent een zorgverlener in &eacute;&eacute;n van volgende categorie&euml;n: ziekenhuizen, woonzorgcentra, instellingen ondersteund door het VAPH, huisdokters, thuisverpleging, apothekers?</br>
-            Goed, dan ben je hier aan het juiste adres!
+            Goed, dan ben je hier aan het juiste adres! Contacteer ons via het formulier.
           </p>
           <p>
-            Klik op de knop hieronder om het formulier in te vullen. Dan komen onze koeriers ze bij jou leveren.<br/><br/>
-            We doen als burgerinitiatief onze uiterste best, maar afhankelijk van de vraag en het aanbod kunnen we misschien niet voldoende maskers of ander beschermmateriaal leveren.
+            Wat verwachten wij van jou?
+            <ol>
+              <li>De school beslist hoeveel laptops zij nodig hebben en hoe lang. Eventueel doen zij een survey bij hun leerlingen om de nood in kaart te brengen.</li>
+              <li>De school laat ons ons team het volgende weten; wij hebben X aantal laptops nodig voor deze tijdspanne.</li>
+              <li>Wij creëren een landingspagina voor de school op deze website en helpen bij de organisatie van een campagne om bedrijven of particulieren te vinden</li>
+              <li>Tussen School en Bedrijf / Particulier en tussen School en Leerling komt er een overeenkomst op papier.</li>
+              <li>De School werkt samen met het Bedrijf/Particulier om de Laptops op school te krijgen. Respecteer hierbij steeds de richtlijnen van de overheid.</li>
+              <li>De School (of het bedrijf, onderling af te spreken) ontsmet de Laptops.</li>
+              <li>De School zorgt ervoor dat de laptops bij de leerlingen geraken </li>
+              <li>De School stemt af met de leerling of die toegang heeft tot een stabiele internet verbinding, zoniet verwijst ze door naar bronnen die daar bij kunnen helpen (Zie Stabiel internet bovenaan de pagina) ).</li>
+              <li>De School zorgt ervoor dat de laptops na gebruik terug op school geraken </li>
+              <li>De School (of het bedrijf, onderling af te spreken) zorgt dat de Laptops worden ontsmet </li>
+              <li>De school zorgt dat de bedrijven / particulieren hun laptops terug zien </li>
+            </ol>
           </p>
 
 
           <a class="btn btn-primary btn-lg mt-5" href="https://docs.google.com/forms/d/1Anae47KklLISFa4KPnViGQ38a9pWsEVSSlF-mteTVJM/viewform" target="_blank">
-            Vraag beschermmateriaal
+            Lanceer een oproep om laptops
           </a>
 
         </div>
@@ -223,21 +236,7 @@
 
           <h4 class="mt-5">Welk beschermmateriaal kan ik aanvragen of aanleveren?</h4>
           <p>Het wegwerpmateriaal dat kan aangevraagd worden is:
-          <ul>
-            <li>mondmaskers genaaid door vrijwillgers
-            <li>mondmaskers FFP1
-            <li>mondmaskers FFP2
-            <li>mondmaskers FFP3
-            <li>schorten (papier)
-            <li>schorten (stof)
-            <li>labojassen (Tyvek, medisch)
-            <li>schorten (Tyvek, medisch)
-            <li>handschoenen Nitril
-            <li>handschoenen labo
-            <li>laarsovertrekken
-            <li>blauwe schoenovertrekken
-            <li>desinfectiemateriaal
-          </ul>
+
           <p>Het herbruikbare beschermmateriaal dat kan aangevraagd worden is:
           <ul>
             <li>herbruikbare beschermbrillen
@@ -262,7 +261,7 @@
   </section>
   <section id="hygiene" class="bg-light">
     <div class="container">
-      <h2 class="text-center">Neem voldoende hygi&euml;nische maatregelen tijdens het maken en verdelen</h2>
+      <h2 class="text-center">Neem voldoende hygi&euml;nische maatregelen</h2>
       <div class="tip-grid">
         <ul class="list-unstyled row justify-content-between align-content-center">
           <li class="col-sm-6 col-md-4 col-lg-4">
@@ -307,10 +306,9 @@
   </section>
   <section id="share" class="">
     <div class="container text-center">
-      <h2 class="h1">wees solidair</h2>
-      <h3 class="h2">deel foto's van je avontuur met</h3>
-      <p><strong class="font-large">#wijhelpenmee</strong> <strong class="font-large">#wijhebbennodig</strong> <strong class="font-large">#maakjemondmasker</strong> <strong class="font-large">#maskermatch</strong></p>
-      <p class="my-5 text-secondary font-large font-weight-bold">Schrijf je alvast in om jouw steentje bij te dragen! Verspreid deze website om meer hulpverleners van dienst te kunnen zijn!</p>
+      <h2 class="h1">Structureel helpen met dit initiatief?</h2>
+      <p>Dit iniatief is opgezet om tijdens de coronacrisis elke leerling online te krijgen. Alle helpende handen zijn welkom.</p>
+      <a class="mt-3 btn btn-primary btn-lg" href="http://join.coronadenktank.be" target="_blank" rel="noopener nofollow">Naar de Slack</a>
     </div>
   </section>
 
@@ -329,7 +327,9 @@
   <script src="./vendor/jquery/jquery.slim.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js" integrity="sha256-xLbDt60MmzSfX/ucnIcIFYqkc3I8qhJWHCZkQfsIj0w=" crossorigin="anonymous"></script>
+  <script src="./assets/app.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160941697-2"></script>
   <script>
