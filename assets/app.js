@@ -42,7 +42,7 @@ $(document).ready(function () {
 	// Load top five HR leaders.
 	$('#hr').sheetrock({
 	url: mySpreadsheet,
-	query: "select A,B,C,D",
+	query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O",
 	rowTemplate: HRTemplate
 	});
 });

@@ -132,9 +132,9 @@
             <script id="hr-template" type="text/x-handlebars-template">
               {{#ifCond cells.Titel '!==' "Titel"}}
               <h3 class="h5 text-dark mt-5">{{cells.Titel}}</h3>
-                <p class="text-dark"><i>{{cells.Datum}}</i>
-                {{cells.Omschrijving}}</p>
-                <a class="mt-3 btn btn-primary btn-lg" href="mailto:{{cells.Email}}" target="_blank" rel="noopener nofollow">Contacteer</a>
+                <p class="text-dark"><i>{{cells.CreatedDate}}</i> {{cells.Omschrijving}}</p>
+                <p class="text-dark"><b>Laptops Gevonden/Laptops Nodig:</b> {{cells.LaptopsGevonden}}/{{cells.LaptopsNodig}}</p>
+                <a class="mt-3 btn btn-primary btn-lg text-capitalize" href="mailto:{{cells.Email}}" target="_blank" rel="noopener nofollow">Contacteer school ({{cells.NaamContactpersoon}})</a>
               {{/ifCond}}
             </script>
           </div>
