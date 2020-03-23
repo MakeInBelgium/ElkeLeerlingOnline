@@ -1,4 +1,4 @@
-# Maskermatch
+# ElkeLeerlingOnline
 
 Bijdrage leveren? Dat kan!
 * Maak een fork en een pull request.
@@ -7,23 +7,15 @@ Bijdrage leveren? Dat kan!
 ## Deployment
 
 Site is voorlopig beschikbaar in slechts 1 taal:
-- NL: https://maskermatch.be/ https://maskersgezocht.be
+- NL: https://elke-leerling-online.coronadenktank.be
 - FR: ???
 
 Het is een *onepager* en iedere taal heeft zn eigen index bestand:
 - index_nl.html
 - index_fr.html
 
-De website wordt gehost bij cloudz.be. Daar draait een script dat iedere 5 minuten een `git pull` doet van deze repo.
-Hou er rekening mee dat Cloudflare alles cached. Bij een update moet de cached geïnvalideerd worden.
-
-```bash
-# Stuur je public key naar @iworx
-ssh coronade@da-2.cloudz.be
-```
-
 ## Kom er bij!
-Neem dan deel aan de conversatie op de Slack workspace van de Corona-denktank Make in Belgium: https://join.coronadenktank.be (Kanaal: #corona-maskermatch).
+Neem dan deel aan de conversatie op de Slack workspace van de Corona-denktank Make in Belgium: https://join.coronadenktank.be (Kanaal: #corona-elke-leerling-online).
 
 
 # local server
@@ -41,22 +33,3 @@ $> php -S 0.0.0.0:8000
 ```
 
 De Maskermatch is vervolgens bereikbaar op `http://localhost:8000`
-
-## met docker
-Gebruik de `Dockerfile` om een image te builden. Zie `docker-run.sh` voor een voorbeeld van hoe het in productie wordt gedraaid. Hiervoor gebruiken we een set-up met Traefik, voor de config, zie de repository van [solidariteitsnetwerk](https://github.com/MakeInBelgium/solidariteitsnetwerk/tree/master/deployment).
-
-
-# CSS
-De css wordt gegenereerd met bootstrap in de npm dependencies, dit kan via het commando `npm ci`. Vervolgens kan je in de map `assets/css` met [SCSS](https://sass-lang.com/) de SCSS converteren naar CSS:
-
-**Dev (met auto refresh)**
-
-```
-scss --watch style.scss:style.css
-```
-
-**Prod (voor een push)**
-
-```
-scss --style compressed style.scss style.css
-```
