@@ -4,6 +4,13 @@ Bijdrage leveren? Dat kan!
 * Maak een fork en een pull request.
 * Meld problemen via de [issues](https://github.com/MakeInBelgium/maskermatch/issues/new).
 
+## Zoekertjes data
+De data over de verschillende vragen van scholen wordt door het operations team gebundeld in een Google Sheets:
+
+https://docs.google.com/spreadsheets/d/1TvDQjbYOaIBCXUpN8g0Fa6rU3YCxBiBDQM5EtD9Tlv8/edit#gid=0
+
+De front-end haalt deze op en geeft ze weer via een Handlebars template.
+
 ## Deployment
 
 Site is voorlopig beschikbaar in slechts 1 taal:
