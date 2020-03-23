@@ -25,6 +25,14 @@ Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
             return options.inverse(this);
     }
 });
+
+
+Handlebars.registerHelper('minus', function(v1, v2) {
+    console.log(v1);
+    console.log(v2);
+    return parseInt(v1) - parseInt(v2);
+  });
+
 $(document).ready(function () {
 	if (
 		location.protocol !== "https:" &&
