@@ -134,7 +134,11 @@
               <h3 class="h5 text-dark mt-5">{{cells.Schoolnaam}} te {{cells.Postcode}} {{cells.Dorp}}, {{cells.Provincie}} zoekt {{minus cells.LaptopsNodig cells.LaptopsGevonden}} laptops</h3>
                 <p class="text-dark"><i>{{cells.CreatedDate}}</i> {{cells.Omschrijving}}</p>
                 <p class="text-dark"><b>Laptops Gevonden/Laptops Nodig:</b> {{cells.LaptopsGevonden}}/{{cells.LaptopsNodig}}</p>
+                {{#if cells.FormulierUrl}}
                 <a class="mt-3 btn btn-primary btn-lg text-capitalize" href="{{cells.FormulierUrl}}" target="_blank" rel="noopener nofollow">Contacteer school ({{cells.NaamContactpersoon}})</a>
+                {{else}}
+                <a class="mt-3 btn btn-primary btn-lg text-capitalize" href="https://forms.gle/oUAgTFGEK1R6MzSw7" target="_blank" rel="noopener nofollow">Contacteer ons</a>
+                {{/if}}
               {{/ifCond}}
             </script>
           </div>
