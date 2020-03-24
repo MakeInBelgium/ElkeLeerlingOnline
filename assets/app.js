@@ -33,6 +33,11 @@ Handlebars.registerHelper('minus', function(v1, v2) {
     return parseInt(v1) - parseInt(v2);
   });
 
+
+  Handlebars.registerHelper('urlEncode', function(v1) {
+    return encodeURIComponent(v1);
+  });
+
 $(document).ready(function () {
 	if (
 		location.protocol !== "https:" &&
