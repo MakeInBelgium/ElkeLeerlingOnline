@@ -35,7 +35,7 @@ Handlebars.registerHelper('minus', function(v1, v2) {
 
 
   Handlebars.registerHelper('urlEncode', function(v1) {
-    return encodeURIComponent(v1.replace(/\s/g, ''));
+    return v1.replace(/[\W_]+/g,"");
   });
 
 $(document).ready(function () {
