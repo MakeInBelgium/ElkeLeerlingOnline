@@ -35,7 +35,7 @@ Handlebars.registerHelper('minus', function(v1, v2) {
 
 
   Handlebars.registerHelper('urlEncode', function(v1) {
-    return encodeURIComponent(v1);
+    return encodeURIComponent(v1.replace(/\s/g, ''));
   });
 
 $(document).ready(function () {
@@ -56,8 +56,13 @@ $(document).ready(function () {
 	$('#hr').sheetrock({
 	url: mySpreadsheet,
 	query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O",
-	rowTemplate: HRTemplate
-	});
+    rowTemplate: HRTemplate,
+    callback: function(){
+        if(window.location.hash){
+            $(window).scrollTop($(window.location.hash).offset().top);
+        }
+    }
+    });
 });
 
 
