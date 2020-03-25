@@ -38,6 +38,11 @@ Handlebars.registerHelper('minus', function(v1, v2) {
     return v1.replace(/[\W_]+/g,"");
   });
 
+  Handlebars.registerHelper('urlEncodeComponent', function(v1) {
+    return encodeURIComponent(v1);
+  });
+
+
 $(document).ready(function () {
 	if (
 		location.protocol !== "https:" &&
