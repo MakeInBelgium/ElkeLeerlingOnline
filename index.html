@@ -212,7 +212,7 @@ body{
 
             <div id="hr" class="row justify-content-between align-items-start">
               <script id="hr-template" type="text/x-handlebars-template">
-              {{#ifCond cells.Titel '!==' "Titel"}}
+              {{#if cells.Titel}}
               <div class="col-md-6 request" id="{{urlEncode cells.Schoolnaam}}-{{urlEncode cells.Postcode}}-{{urlEncode cells.Dorp}}"  style="padding: 5em 2em;">
               <div class="card">
                 <p class="card-header text-dark">{{cells.Postcode}} {{cells.Dorp}}</p>
@@ -276,7 +276,7 @@ body{
               </div>
             </div>
           </div>
-              {{/ifCond}}
+              {{/if}}
             </script>
             </div>
 
