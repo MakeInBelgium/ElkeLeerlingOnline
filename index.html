@@ -221,6 +221,9 @@
       
               </div>
               <ul class="list-group list-group-flush">
+                <li class="list-group-item text-dark"><b>Totaal Aantal Leerlingen:</b> {{cells.AantalLeerlingen}}</li>
+                <li class="list-group-item text-dark"><b>Duurtijd:</b> {{cells.Duurtijd}}</li>
+
                 <li class="list-group-item text-dark"><b>Laptops Gevonden/Laptops Nodig:</b> {{cells.LaptopsGevonden}}/{{cells.LaptopsNodig}}</li>
                 <li class="list-group-item text-dark"><b>Deel deze oproep:</b>
                   <div class="row  mt-3 justify-content-md-center">
@@ -258,6 +261,11 @@
                   {{/if}}
                 </div>
                 </li>
+                {{#if cells.NamenHelpendePartijen}}
+                <li class="list-group-item text-dark"><b>Helpende partijen:</b><br/>
+                {{cells.NamenHelpendePartijen}}
+                </li>
+                {{/if}}
 
               </ul>
               <div class="card-footer text-muted">
