@@ -55,12 +55,18 @@ $(document).ready(function () {
 		);
 	}
 	var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1TvDQjbYOaIBCXUpN8g0Fa6rU3YCxBiBDQM5EtD9Tlv8/edit#gid=0';
-	var HRTemplate = Handlebars.compile($('#hr-template').html());
-
+    var HRTemplate = Handlebars.compile($('#hr-template').html());
+    
+    var provinceFilter = $("#hr").data("province");
+    var provinceColumn = "K"
+    var query = "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O";
+    if(provinceFilter){
+        query = "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O where " + provinceColumn + " = '" + provinceFilter + "'";
+    }
 	// Load top five HR leaders.
 	$('#hr').sheetrock({
 	url: mySpreadsheet,
-	query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O",
+	query: query,
     rowTemplate: HRTemplate,
     callback: function(){
         if(window.location.hash){
